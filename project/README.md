@@ -34,13 +34,17 @@ To ensure astronauts always have medical guidance—even during complete communi
 ## SOME SNIPS WITH THE PROGRAM IN ACTION
 
 **Access Code Login:**
-[Login Screen] we paste image link here
+<img width="1600" height="896" alt="login snip" src="https://github.com/user-attachments/assets/b1c43dd7-9a0f-4797-a87b-cd5fc0c5acd4" />
 
 **Main Dashboard:**
-[Dashboard] we paste image link here
+<img width="1600" height="896" alt="dashboard" src="https://github.com/user-attachments/assets/f52b5bd5-63a2-4c5e-97f8-f9713e078638" />
 
 **Abnormal Alert & Guidance:**
-[Alert Screen] we paste image link here
+<img width="1600" height="716" alt="abnormal guidance" src="https://github.com/user-attachments/assets/00b7d2ee-bbdb-405b-80a1-8d1d329b6499" />
+<img width="1600" height="899" alt="abnormal alert" src="https://github.com/user-attachments/assets/685b23a3-385c-43b6-84b0-56d2e0294b5f" />
+
+**Weekly Health Report**
+<img width="958" height="1324" alt="weekly health report" src="https://github.com/user-attachments/assets/1b7a249d-be83-4772-a009-9180930d6c5b" />
 
 ---
 
