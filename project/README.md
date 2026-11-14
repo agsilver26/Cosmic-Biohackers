@@ -56,7 +56,18 @@ To ensure astronauts always have medical guidance—even during complete communi
 
 ## HOW TO RUN THIS PROJECT
 
-TODO
+1. Clone or download this repository to your computer and open a terminal inside the `project` folder.
+2. Install the required Python libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Add your AI API key:
+   Create a `.streamlit/secrets.toml` file and add your Groq API key so the AI agent can connect. *(THIS IS A CRUCIAL STEP!)*
+4. Launch Streamlit:
+   ```bash
+   streamlit run project.py
+   ```
+5. The dashboard will automatically open in your web browser at `http://localhost:8501`.
 
 **Demo Astronaut Access Codes:**
 Enter any of the codes below on the login screen. Each code opens an isolated profile so individual crew data stays separate:

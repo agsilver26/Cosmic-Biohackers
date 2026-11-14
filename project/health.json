@@ -1,0 +1,24 @@
+{
+  "Brian": [
+    {
+      "Heart Rate": 72,
+      "Blood Oxygen": 97,
+      "Bone Density": 1.0,
+      "Muscle Strength": 460,
+      "Body Temperature": 36.8,
+      "Radiation": 2.5
+    },
+    {
+      "Heart Rate": 61,
+      "Blood Oxygen": 94.7,
+      "Bone Density": 1.5,
+      "Muscle Strength": 444.5,
+      "Body Temperature": 32.0,
+      "Radiation": 3.0,
+      "Date": "2026-11-14 15:35"
+    }
+  ],
+  "_mind": {
+    "Brian": []
+  }
+}
