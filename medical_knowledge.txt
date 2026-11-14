@@ -1,0 +1,233 @@
+Health risk monitoring system 
+-Measurements: 
+-Physical measurements: 
+Heart rate(BPM):  
+Explanation: Beats per minute are measured by a wearable ECG or optical 
+pulse sensor. 
+Microgravity shifts fluids towards the chest and head, changing 
+cardiovascular workload and altering the heart rate responses. 
+Normal range: 60-100bpm 
+Abnormal range: below 60 or above 100 (not always abnormal) 
+Blood oxygen(%): 
+Explanation: Measured by a pulse oximeter. Or can be directly determined by 
+a respiratory wearable sensor. 
+Oxygen saturation reflects hemoglobin oxygenation which can reveal 
+circulatory problems. 
+Normal range: 95-100% 
+Abnormal range: Below 95%, ≤ 90% is particularly concerning 
+Bone density(g/𝒄𝒎𝟐): 
+Explanation: Without gravitational loading, bones remodel towards 
+mineralized tissue, raising concerns about bone strength and kidney stones. 
+Depends on age, sex, measured at the lumbar spine. 
+Normal range: 0.8-1.2 
+Abnormal range: not in the normal range, and A T-score ≤-2.5 indicates 
+conditions for astronauts above the age of 50 
+ 
+muscle strength(N): 
+Explanation: Muscles experience less mechanical loading in microgravity, 
+causing reduced force production, especially in muscles used for posture. 
+(hand grip strength) 
+Normal:290-480 (not gender specific(average))  
+Abnormal: less than 290-480 (not gender specific); for women, low strength is 
+around 180 N, and for men it's below 270N (gender specific values) 
+Body temperature(degrees Celsius): 
+Explanation: Body temperature reflects metabolic heat production and heat 
+transfer, and in microgravity, convection and sweat evaporation behave 
+differently, making thermal regulation important. 
+Normal: 36.1-37.2 
+Abnormal: 38 or higher is generally a fever 
+ 
+- environmental conditions: 
+Radiation exposure(mSv): 
+Explanation: measured by a dosimeter 
+. Space radiation includes energetic particles that ionize tissue and can 
+damage DNA. Exposures differ with solar activity, shielding, and spacecraft 
+location. 
+Normal: 0.0066 daily 
+Abnormal: more than 0.0066 daily 
+ 
+- psychological health: 
+Stress and mind state: 
+Normal: Serene and calm 
+Abnormal: Moderate stress/high tension 
+Sleep(hours): 
+Normal:7-8  
+Abnormal: less than 7 hours, More than 10 hours may warrant attention if 
+persistent or occupied by fatigue. 
+Connection: 
+Abnormal: lonely/very lonely 
+Energy: 
+Abnormal: Drained 
+ 
+-Alert thresholds (for every week): 
+Abnormality %=
+𝑛𝑢𝑚𝑏𝑒𝑟 𝑜𝑓 𝑎𝑏𝑛𝑜𝑟𝑚𝑎𝑙 𝑟𝑒𝑎𝑑𝑖𝑛𝑔𝑠
+𝑡𝑜𝑡𝑎𝑙 𝑟𝑒𝑎𝑑𝑖𝑛𝑔𝑠(𝑖𝑛 𝑎 𝑤𝑒𝑒𝑘) ×100 
+ 
+At what abnormality % is it concerning? 
+Blood oxygen & body temperature are concerning if the abnormality 
+percentage is equal to or higher than 20%. 
+Heart rate, bone density, muscle strength, high stress, insufficient sleep, 
+loneliness, and drained energy are concerning if the abnormality percentage 
+is equal to or higher than 50%. 
+ 
+* Bone density and radiation also need longer-term (monthly) assessment 
+rather than weekly abnormality counting. 
+ 
+-Alert messages (possible conditions): 
+*Only give an alert message if the alert threshold is reached. 
+ 
+Heart rate: persistent heart rate abnormalities detected. 
+Possible Cardiac arrhythmia: look for persistent unusually fast, slow, or 
+irregular heartbeat. impaired with fatigue or dizziness. 
+Possible stroke: look for sudden facial dropping, 1 sided weakness, speech or 
+vision difficulties. 
+* Emergency symptoms check for strokes: (B.E. F.A.S.T.): 
+B-balance: sudden loss of balance. 
+E- eyes: Sudden vision changes. 
+F-face: one side of the face droops. 
+A-arms: weakness in one arm. 
+S-speech: slurred speech or difficulty speaking. 
+T-time: immediately activate the emergency medical protocol: 
+what's the crewmates should do: 
+1. alert Mission Control immediately. 
+2. Record the time symptoms began. 
+3. Keep the astronauts safe and supported. 
+4. Follow the spacecraft's emergency medical protocol. 
+5. Do not give food, drink, or medication unless directed by medical 
+personnel. 
+Blood oxygen: repeated low blood oxygen detected. 
+Possible respiratory or oxygenation impairment. 
+Bone density: progressive bone density decline detected.  
+Possible bone demineralization: Increased risk of bone weakness and 
+fractures. 
+Muscle strength: resistant muscle strength reduction detected.  
+Possible muscle deconditioning. 
+Body temperature: repeated temperature abnormalities detected. Possible 
+infection, inflammation, or temperature regulation disturbance. 
+Stress: persistent high stress detected. Possible psychological strain or 
+adaptation difficulties: Resistant psychological strain and difficulty adapting 
+to isolation. 
+Sleep: repeated insufficient sleep detected. Possible sleep disruption and 
+fatigue. 
+Social connection: persistent loneliness detected. Possible social isolation 
+and psychological strain. 
+Energy: persistent low energy detected. Possible fatigue, inadequate 
+recovery, or psychological strain 
+ 
+* A note that can be added in each message: these thresholds should 
+generate possible health concerns; not diagnosis. 
+ 
+-Combinations of abnormal measurements(when some 
+of measurements have high abnormality frequency): 
+1. High heart rate+ low blood oxygen=  
+Possible pulmonary embolism(blood clots in the lungs): sudden 
+breathlessness, chest pain, fainting. 
+Possible Hypoxia: reduced oxygenation, breathlessness, confusion. 
+2. low bone density+ low muscle strength=possible musculoskeletal 
+deterioration 
+3. High heart rate+ high body temperature= possible heat stress, 
+dehydration, infection 
+4. low blood oxygen+ high heart rates+ abnormal temperature= 
+possible respiratory illness or systemic infection 
+5. Heart rate+ high tension stress= possible psychological stress. 
+6. Reduced muscle strength+ drained energy= possible muscle atrophy: 
+progressive loss of muscle performance. 
+7. Abnormal heart rates+ reduced muscle strength= 
+ possible cardiovascular deconditioning: reduced exercise tolerance 
+and physical performance 
+ 
+-Abnormality intervention steps: 
+Intervention types: 
+1- early intervention: when abnormal readings are appearing but not 
+reaching the alert threshold. Give the astronauts simple actions to improve 
+their condition. 
+2- health alert: the abnormality has reached the alert threshold. Give more 
+structured steps involving the astronaut and crewmates, or medical support. 
+ 
+Measurements and their interventions: 
+Heart rate:  
+Early intervention: 1. Reduce physical activity temporarily. 2. Allow time for 
+rest and recovery. 3. Maintain adequate hydration.  
+Health alert: 1. Assess for symptoms such as dizziness, chest pain, or 
+breathlessness. 2. Review recent activity, hydration, and sleep. 3. Perform an 
+ECG if directed by the medical team. 5. Follow the prescribed cardiovascular 
+assessment protocol. 
+ 
+Blood oxygen: 
+Early intervention: 1. Sit comfortably and rest. 2. Check that the monitoring 
+device is positioned correctly. 3. Ensure that the cabin oxygen system is 
+functioning normally. 
+Health alert: 1. Assess breathing difficulties, chest discomfort, and dizziness. 
+2. Evaluate cabin oxygen and pressure conditions. 3. Follow this spacecraft's 
+respiratory emergency protocol. 4. Supplemental oxygen or other treatment 
+should only be provided according to medical and mission protocols. 
+ 
+Bone density: 
+early intervention: 1. Maintain the prescribed resistance and weight bearing 
+exercise program. 2. Follow the approved calcium and vitamin D nutrition 
+plan. 3. Maintain nutritional intake.  
+Health alert: 1. Assess exercise intensity and adherence. 2. Review nutritional 
+intake and possible deficiencies. 3. Medical specialists may be needed to 
+consider additional future investigations or treatments. 
+ 
+Muscle strength:  
+early intervention: 1. Follow the scheduled resistance exercise program. 2. 
+Allow sufficient recovery between sessions. 3. Maintain adequate protein and 
+nutritional intake. 4. Monitor exercise performance. 
+Health alert: 1. Evaluate muscle loss and physical performance. 2. Review the 
+resistance training program. 3. Consider physiotherapy or a modified exercise 
+plan. 5. Assess nutritional status and recovery. 
+ 
+Body temperature:  
+early intervention: 1. Adjust clothing and environmental comfort. 2. Maintain 
+adequate hydration. 3. Avoid excessive physical exertion.  
+Health alert: 1. Assess for infection-related symptoms. 2. Evaluate cabin 
+temperature and environmental conditions. 3. Follow the appropriate 
+infection-control or temperature management protocol. 
+ 
+Radiation exposure: 
+early intervention: 1. Identify the source of exposure. 2. Follow the scheduled 
+dosimetry monitoring. 3. Review available shielding and exposure reduction 
+measures. 
+Health alert: 1. Assess the exposure level, duration, and radiation type. 2. 
+Follow the emissions radiation emergency protocol. 3. Reduce further 
+exposure using approved shading or relocation procedures. 4. Arrange 
+medical evaluation based on the estimated dose. 
+ 
+High tension stress:  
+early intervention: 1. Take a short break from demanding tasks. 2. Practice 
+controlled breathing or relaxation techniques. 3. Engage in a preferred 
+recreational activity. 4. Maintain communication with crewmates. 
+Health alert: 1. Identify possible causes such as workload, isolation , or sleep 
+disruption. 2. Introduce stress management activities into the daily schedule. 
+ 
+Sleep: 
+early intervention: 1. Maintain a consistent sleep schedule. 2. Reduce screen 
+exposure before sleeping. 3. Reduce unnecessary noise and light. 4. Avoid 
+excessive caffeine intake. 5. Allow sufficient time for rest. 
+Health alert: 1. Review the sleep schedule and workload. 2. Evaluate 
+environmental factors affecting sleep. 3. Consider sleep monitoring and 
+assessment. 
+ 
+Social connection(loneliness): 
+Early intervention: 1. Schedule social activities with crewmates. 2. Participate 
+in Group recreational activities. 3. Maintain communication with family and 
+friends on Earth when possible. 
+ 
+Energy (drained): 
+Early intervention: 1. Take a suitable rest period. 2. Maintain adequate 
+hydration. 3. Eat balanced meals. 4. Adjust physical activity according to 
+recovery needs. 5. Maintain a consistent sleep schedule. 
+Health alert: 1. Evaluate sleep quality and workload. 2. Assess nutritional 
+intake and hydration. 3. Investigate possible causes such as anemia or 
+infection. 
+ 
+* An important note: the website should never independently 
+prescribe medication, change cabin oxygen levels, or modify 
+radiation shielding procedures. Those actions must follow approved 
+mission protocols and medical supervision.   
+*A note for the astronaut: the abnormality percentage shouldn't 
+delay emergency care, as serious symptoms or critical 
+measurements must trigger immediate escalation even if the weekly 
+abnormality percentage is low. 
