@@ -5,7 +5,7 @@
 
 **Team Name:** Cosmic Biohackers
 
-**Live Demo:** TODO
+**Live Demo:** (https://cosmic-biohackers-mcf3ezpeuazfzgetpmrmrk.streamlit.app/)
 
 **Demo Video:** TODO
 
