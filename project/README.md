@@ -71,9 +71,9 @@ To ensure astronauts always have medical guidance—even during complete communi
 
 **Demo Astronaut Access Codes:**
 Enter any of the codes below on the login screen. Each code opens an isolated profile so individual crew data stays separate:
-* `6225` – Brian
-* `3245` – George
-* `9653` – Emma
+* `6225` – Sohail
+* `9653` – Yasmeen
+* `3245` – Ahmed
 
 ---
 
