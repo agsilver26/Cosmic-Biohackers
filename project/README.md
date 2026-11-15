@@ -1,5 +1,5 @@
 <h1 align="center">LifeLine</h1>
-<p align="center">An autonomous, hybrid-offline health monitoring web software built for deep-space astronauts.</p>
+<p align="center">An autonomous health monitoring web software built for deep-space astronauts.</p>
 
 **NASA Space Apps Challenge:** Health Monitoring Software for Astronauts on Space Missions
 
