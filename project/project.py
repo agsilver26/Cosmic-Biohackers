@@ -29,8 +29,10 @@ def set_background(path="background.mp4"):
 set_background()
 
 #logo
-if os.path.exists(os.path.join(BASE_DIR, "logo.png")):
-    st.logo(os.path.join(BASE_DIR, "logo.png"))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+logo_path = os.path.join(BASE_DIR, "logo.png")
+if os.path.exists(logo_path):
+    st.logo(logo_path)
 
 #sidebar font and visibility
 st.markdown("""
@@ -101,7 +103,7 @@ ranges = {
     "Bone Density": (0.8, 1.2, "g/cm^2"),
     "Muscle Strength": (290, 100000, "N"),
     "Body Temperature": (36.1, 37.2, "°C"),
-    "Radiation": (0, 3, "μGy")
+    "Radiation": (2, 3, "μGy")
 }
 threshold = {
     "Blood Oxygen": 20,
@@ -164,8 +166,9 @@ if "user" not in st.session_state:
 if st.session_state.user is None:
     #logo
     c1, c2, c3 = st.columns([1, 2, 1])
-    if os.path.exists("logo.png"):
-        c2.image("logo.png", width = 600)
+    logo_path = os.path.join(BASE_DIR, "logo.png")
+    if os.path.exists(logo_path):
+        c2.image(logo_path, width=600)
 
     st.subheader("Log in")
     with st.form("login_form"):
@@ -319,11 +322,15 @@ background:#fff;border:3px solid #0b0f1a;box-shadow:0 0 14px {colour};"></div></
             args=("Polaris AI",)
         )
 
+
+    no_high = ["Muscle Strength"]   
+    no_low = ["Radiation"]          
+
     def check(metric, value):
         low, high, unit = ranges[metric]
-        if value > high:
+        if value > high and metric not in no_high:
             return "high"
-        elif value < low:
+        elif value < low and metric not in no_low:
             return "low"
         return "normal"
 
@@ -337,8 +344,12 @@ background:#fff;border:3px solid #0b0f1a;box-shadow:0 0 14px {colour};"></div></
     def alert(items):
         for m, status, value in items:
             low, hi, unit = ranges[m]
-            st.write(f"*{m}* is *{status}*: {value: g} {unit} (normal {low} to {hi})")
-            if st.button(f"Read more about {m}", key = f"dlg_{m}", on_click = goto, args=(m,)):
+            if m in no_high:
+                normal = f"at least {low} {unit}"
+            else:
+                normal = f"{low} to {hi} {unit}"
+            st.write(f"*{m}* is *{status}*: {value:g} {unit} (normal {normal})")
+            if st.button(f"Read more about {m}", key=f"dlg_{m}", on_click=goto, args=(m,)):
                 st.rerun()
     alertmessage = st.dialog("*Danger:* Abnormal reading")(alert) if hasattr(st, "dialog") else None
 
