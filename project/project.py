@@ -9,24 +9,28 @@ import random
 from groq import Groq
 from pypdf import PdfReader
 
-#background video
-def set_background(path = "background.mp4"):
-    if not os.path.exists(path):
+# Background video
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+def set_background(path="background.mp4"):
+    full_path = os.path.join(BASE_DIR, path)
+    if not os.path.exists(full_path):
         return
-    video = base64.b64encode(open(path, "rb").read()).decode()
+    video = base64.b64encode(open(full_path, "rb").read()).decode()
     st.markdown(f"""
     <style>
     .stApp {{background: transparent; }}
     #bg {{ position: fixed; inset: 0; width: 100vw; height: 100vh;
-       object-fit: cover; z-index: -1; opacity: 0.35; }}
+    object-fit: cover; z-index: -1; opacity: 0.35; }}
     </style>
     <video id="bg" autoplay muted loop playsinline src="data:video/mp4;base64,{video}"></video>
     """, unsafe_allow_html=True)
 
 set_background()
+
 #logo
-if os.path.exists("logo.png"):
-    st.logo("logo.png")
+if os.path.exists(os.path.join(BASE_DIR, "logo.png")):
+    st.logo(os.path.join(BASE_DIR, "logo.png"))
 
 #sidebar font and visibility
 st.markdown("""
@@ -81,7 +85,7 @@ def save_records(record):
         json.dump(record, f, indent = 2)
 
 #stored data
-astronauts = {"6225": "Brian", "3245": "George", "9653": "Emma"}
+astronauts = {"6225": "Sohail", "3245": "Ahmed", "9653": "Yasmeen"}
 previous = {"Heart Rate": 72, "Blood Oxygen": 97, "Bone Density": 1.0, "Muscle Strength": 460, "Body Temperature": 36.8, "Radiation": 2.5}
 quotes = [
     "Even among the stars, you're never alone.",
@@ -95,9 +99,9 @@ ranges = {
     "Heart Rate": (60, 100, "bpm"),
     "Blood Oxygen": (95, 100, "%"),
     "Bone Density": (0.8, 1.2, "g/cm^2"),
-    "Muscle Strength": (290, 480, "N"),
+    "Muscle Strength": (290, 100000, "N"),
     "Body Temperature": (36.1, 37.2, "°C"),
-    "Radiation": (2, 3, "μGy")
+    "Radiation": (0, 3, "μGy")
 }
 threshold = {
     "Blood Oxygen": 20,
