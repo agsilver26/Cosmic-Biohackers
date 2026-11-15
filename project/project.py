@@ -87,11 +87,7 @@ def save_records(record):
         json.dump(record, f, indent = 2)
 
 #stored data
-<<<<<<< HEAD
 astronauts = {"6225": "Sohail", "3245": "Ahmed", "9653": "Yasmeen"}
-=======
-astronauts = {"6225": "Sohail", "9653": "Yasmeen", "3245": "Ahmed"}
->>>>>>> 269e1cd47b569941b2363127d3785c50991d969f
 previous = {"Heart Rate": 72, "Blood Oxygen": 97, "Bone Density": 1.0, "Muscle Strength": 460, "Body Temperature": 36.8, "Radiation": 2.5}
 quotes = [
     "Even among the stars, you're never alone.",
