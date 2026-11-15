@@ -1,13 +1,13 @@
 <h1 align="center">LifeLine</h1>
-<p align="center">An autonomous, hybrid-offline health monitoring web software built for deep-space astronauts.</p>
+<p align="center">An autonomous health monitoring web software built for deep-space astronauts.</p>
 
 **NASA Space Apps Challenge:** Health Monitoring Software for Astronauts on Space Missions
 
 **Team Name:** Cosmic Biohackers
 
-**Live Demo:** TODO
+**Live Demo:** https://cosmic-biohackers-3u5hkr9qcvatxf2xmxqc2j.streamlit.app/
 
-**Demo Video:** TODO
+**Demo Video:** https://youtu.be/6VrLdQ9AqoE
 
 ---
 
@@ -64,13 +64,24 @@ To ensure astronauts always have medical guidance—even during complete communi
 
 ## HOW TO RUN THIS PROJECT
 
-TODO
+1. Clone or download this repository to your computer and open a terminal inside the `project` folder.
+2. Install the required Python libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Add your AI API key:
+   Create a `.streamlit/secrets.toml` file and add your Groq API key so the AI agent can connect. *(THIS IS A CRUCIAL STEP!)*
+4. Launch Streamlit:
+   ```bash
+   streamlit run project.py
+   ```
+5. The dashboard will automatically open in your web browser at `http://localhost:8501`.
 
 **Demo Astronaut Access Codes:**
 Enter any of the codes below on the login screen. Each code opens an isolated profile so individual crew data stays separate:
-* `6225` – Brian
-* `3245` – George
-* `9653` – Emma
+* `6225` – Sohail
+* `9653` – Yasmeen
+* `3245` – Ahmed
 
 ---
 
